@@ -1,0 +1,51 @@
+.calculator {
+    width: 400px;
+    background: #0f0e0e;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(228, 221, 221, 0.3);
+  }
+  
+  /* Display screen */
+  .display {
+    background: #3a3939;
+    color: white;
+    padding: 20px;
+    font-size: 2.5em;
+    text-align: right;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+  /* Button grid */
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  /* Default button style */
+  button {
+    padding: 20px;
+    font-size: 1.5em;
+    background: #424242;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #555;
+  }
+  
+  /* Orange operator buttons */
+  .operator {
+    background: #ff9500;
+  }
+  
+  .operator:hover {
+    background: #e08a00;
+  }
+  
