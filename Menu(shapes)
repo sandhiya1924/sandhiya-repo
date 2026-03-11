@@ -1,0 +1,37 @@
+def sq():
+    s=int(input("Enter the side:"))
+    print ("the area of the square:",s*s)
+def rect(l,b):
+    print("the area of the rectangle is:",l*b)
+def tri(base,hight):
+    return 0.5*base*hight
+def cir(r):
+    return 3.14*r*r
+print("-------MENU------")
+print("1.Square")
+print("2.Rectangle")
+print("3.Triangle")
+print("4.Circle")
+ch=int(input("enter your choice:"))
+while(ch!=0 and ch<5):
+    if(ch==1):
+        sq()
+        ch=int(input("enter your choice:"))
+    elif(ch==2):
+        l=int(input("enter the lenght:"))
+        b=int(input("enter the breadth:"))
+        rect(l,b)
+        ch=int(input("enter your choice:"))
+    elif(ch==3):
+        base=int(input("enter the base:"))
+        hight=int(input("enter the hight:"))
+        area = tri(base, hight)
+        print("The area of the triangle is:", area)
+        ch=int(input("enter your choice:"))
+    elif(ch==4):
+        r=int(input("enter the radius:"))
+        area= cir(r)
+        print("the area of the circle is:",area)
+        ch=int(input("enter your choice:"))
+else:
+    print("invalid!")
