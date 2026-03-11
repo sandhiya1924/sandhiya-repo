@@ -1,0 +1,23 @@
+import random
+a=random.randint(1,10)
+b=random.randint(1,10)
+name1=input("enter player1:")
+name2=input("enter player2:")
+s1=0
+s2=0
+g1=0
+g2=0
+print("Player 1 turn")
+while(g1!=a):
+    g1=int(input("Enter your guess:"))
+    s1=s1+1
+print("Player 1 turn")
+while(g2!=b):
+    g2=int(input("Enter your guess:"))
+    s2=s2+1
+if(s1<s2):
+    print("{} is winner".format(name1))
+elif(s2<s1):
+    print("{} is winner".format(name2))
+else:
+    print("drawn")
