@@ -1,0 +1,12 @@
+a=int(input("Enter a number:"))
+b=int(input("enter a number:"))
+c=int(input("enter a number:"))
+
+a1=[int(i) for i in str(a)]
+b1=[int(i) for i in str(b)]
+c1=[int(i) for i in str(c)]
+
+large=max(a1)+max(b1)+max(c1)
+small=min(a1)+min(b1)+min(c1)
+key=large*small
+print("Answer:",key)
