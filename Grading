@@ -1,0 +1,14 @@
+name=['sandhiya','Kiruthiga','gayathri','sahana','arun']
+marks=[[90,55,83],[33,90,66],[12,45,89],[45,67,89],[89,35,67]]
+
+for i in range(5):
+    P=sum(marks[i])//3
+    if(P>90):
+        G="S"
+    elif(P>60 and P<90):
+        G="A"
+    elif(P>40 and P<60):
+        G="B"
+    else:
+        G="F"
+    print("{}.{}-{}%-Grade{}".format (i+1,name[i],P,G))
