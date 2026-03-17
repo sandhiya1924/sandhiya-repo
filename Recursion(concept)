@@ -1,0 +1,9 @@
+def san(a):
+    if(a==1):
+        return
+    print(a+10,end=" ")
+    san(a-1)
+    print(a)
+san(4)
+    
+
