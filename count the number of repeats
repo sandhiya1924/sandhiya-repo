@@ -1,0 +1,17 @@
+a = input("Enter the Security Code: ")
+
+count = {}
+
+for dig in a:
+    if dig in count:
+        count[dig] += 1
+    else:
+        count[dig] = 1
+
+print("Digits appearing more than once:")
+repeat_count = 0
+for dig in count:
+    if count[dig] > 1:
+        repeat_count += 1
+
+print("Total repeating digits:", repeat_count)
