@@ -1,0 +1,13 @@
+a=int(input("Enter the Security Code:"))
+d={}
+for i in str(a):
+    if i not in d:
+        d[i]=1
+    else:
+        d[i]=d[i]+1
+print(d)
+count=0
+for i,j in d.items():
+    if (j>1):
+        count=count+1
+print(count)
